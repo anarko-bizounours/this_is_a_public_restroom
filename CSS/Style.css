@@ -90,7 +90,6 @@
 /* CONTAINER 1 */
 
 .container1{
-    border: solid black 1px;
     width: 100%;
     height: auto;
     padding: 35px 15px 0 15px;
@@ -98,7 +97,6 @@
 
 @media screen and (min-width: 1080px) {
     .container1{
-        border: solid black 1px;
         padding: 35px 0 0 15px;
     }
 }
@@ -341,15 +339,20 @@
 /* CONTAINER 2 */
 
 .container2{
-    border: solid red 1px;
     width: 100%;
     height: auto;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
+@media screen and (min-width: 1080px) {
+    .container2{
+        display: flex;
+        flex-direction: row-reverse;    
+    }
+}
+
 .popular-box{
-    border: solid green 1px;
     width: 100%;
     height: auto;
     background-color: #F2F2F2;
@@ -357,8 +360,16 @@
     flex-direction: column;
 }
 
+@media screen and (min-width: 1080px) {
+    .popular-box{
+        width: 55%;
+        height: auto;
+        border-radius: 15px;
+        margin: 0px 20px;
+    }
+}
+
 .header-popular{
-    border: solid rgb(0, 0, 0) 1px;
     width: auto;
     height: auto;
     display: flex;
@@ -434,8 +445,15 @@
     height: auto;
 }
 
+@media screen and (min-width: 1080px) {
+    .housing{
+        background-color: #F2F2F2;
+        border-radius: 15px;
+        margin: 0px 0px 0px 20px;
+    }
+}
+
 .header-housing{
-    border: solid rgb(255, 0, 0) 1px;
     width: auto;
     height: auto;
     display: flex;
@@ -444,7 +462,7 @@
 }
 
 .card2{
-    border: solid rgb(21, 255, 0) 1px;
+    border: solid #F2F2F2 1px;
     width: 90%;
     height: auto; /*150px*/
     margin: 20px;
@@ -453,6 +471,30 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (min-width: 1080px) {
+    .card2{
+    margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .card2groupe1{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .card2groupe2{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 .card2-img{
@@ -472,9 +514,6 @@
     height: auto;
     padding: 5px 5px 5px 15px;
     margin-top: 5px;
-}
-
-.card2-description{
 }
 
 .card2-title{
@@ -502,7 +541,6 @@
 }
 
 .footer-housing{
-    border: solid rgb(255, 0, 0) 1px;
     width: auto;
     height: auto;
     display: flex;
@@ -512,23 +550,42 @@
 
 /* ACTIVITES */
 
-
-.activities{
+.container3{
     width: 100%;
     height: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1080px) {
+    .container3{
+        display: flex;
+        flex-wrap: wrap
+    }
 }
 
 .header-activities{
-    border: solid rgb(0, 238, 255) 1px;
-    width: auto;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
     padding: 25px 0 0 18px;
 }
 
+.activitycardbox{
+    width: 100%;
+    height: auto; 
+}
+
+
+@media screen and (min-width: 1080px) {
+    .activitycardbox{
+        display: flex;
+    }
+}
+
 .card3{
-    border: solid rgb(0, 0, 0) 1px;
+    border: solid #F2F2F2 1px;
     width: 90%;
     height: auto; /*150px*/
     margin: 20px;
@@ -541,6 +598,12 @@
 .card3-img{
     width: 100%;
     height: 110px;
+}
+
+@media screen and (min-width: 1080px) {
+    .card3-img{
+        height: 300px;
+    }
 }
 
 .pic3{
@@ -572,7 +635,6 @@
 }
 
 .footer-housing{
-    border: solid rgb(255, 0, 0) 1px;
     width: auto;
     height: auto;
     display: flex;
@@ -583,14 +645,19 @@
 /* FOOTER */
 
 .footer{
-    border: solid rgb(0, 217, 255) 1px;
-    width: 100%;
     height: auto;
     background-color: #F2F2F2;
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 1080px) {
+    .footer{
+        display: flex;
+        margin: 0px 20px;
+    }
 }
 
 .footer-box{
-    border: solid rgb(255, 238, 0) 1px;
     width: 100%;
     height: auto;
     padding: 25px 0 0 20px;
