@@ -325,7 +325,7 @@ main() {
    install_kubectl
    sleep 2
    printf "As I am a benevolent god, here the dashboard started ;)\n\n"
-   minikube dashboard --url
+   #minikube dashboard --url
 }
 
 #########################################################
