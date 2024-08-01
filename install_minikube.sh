@@ -324,7 +324,8 @@ main() {
    sleep 2
    install_kubectl
    sleep 2
-   printf "As I am a benevolent god, here the dashboard started ;)\n\n"
+   printf "As I am a benevolent god, here some info \n\n"
+   minikube profile list
    #minikube dashboard --url
 }
 
