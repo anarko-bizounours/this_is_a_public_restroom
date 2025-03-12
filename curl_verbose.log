@@ -1,0 +1,76 @@
+*   Trying 127.0.0.1:8000...
+* Connected to 127.0.0.1 (127.0.0.1) port 8000
+* ALPN: curl offers h2,http/1.1
+* SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / secp521r1 / RSASSA-PSS
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: O=Symfony dev cert; OU=TEMPORAIRE\Snips@Temporaire (Snips); CN=localhost
+*  start date: Feb 13 09:40:16 2025 GMT
+*  expire date: May 19 08:40:16 2027 GMT
+*  issuer: O=Symfony dev CA; OU=TEMPORAIRE\Snips@Temporaire (Snips); CN=Symfony TEMPORAIRE\Snips@Temporaire (Snips)
+*  SSL certificate verify result: self-signed certificate in certificate chain (19), continuing anyway.
+*   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+*   Certificate level 1: Public key type RSA (3072/128 Bits/secBits), signed using sha256WithRSAEncryption
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://127.0.0.1:8000/login
+* [HTTP/2] [1] [:method: POST]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: 127.0.0.1:8000]
+* [HTTP/2] [1] [:path: /login]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [content-length: 33]
+* [HTTP/2] [1] [content-type: application/x-www-form-urlencoded]
+> POST /login HTTP/2
+Host: 127.0.0.1:8000
+Accept: */*
+Content-Length: 33
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 33 bytes
+< HTTP/2 302 
+< cache-control: max-age=0, must-revalidate, private
+< content-type: text/html; charset=utf-8
+< date: Sun, 09 Mar 2025 16:57:53 GMT
+< expires: Sun, 09 Mar 2025 16:57:53 GMT
+* Need to rewind upload for next request
+< location: https://127.0.0.1:8000/login
+< set-cookie: sf_redirect=%7B%22token%22%3A%2298a293%22%2C%22route%22%3A%22app_login%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CUserController%22%2C%22method%22%3A%22login%22%2C%22file%22%3A%22C%3A%5C%5CUsers%5C%5CSnips%5C%5CDocuments%5C%5CDev_Web%5C%5CPerso%5C%5CEvodex%5C%5CEvodex%5C%5Csrc%5C%5CController%5C%5CUserController.php%22%2C%22line%22%3A47%7D%2C%22status_code%22%3A302%2C%22status_text%22%3A%22Found%22%7D; path=/; secure; httponly; samesite=lax
+< set-cookie: main_deauth_profile_token=98a293; path=/; httponly; samesite=lax
+< set-cookie: main_auth_profile_token=deleted; expires=Sat, 09 Mar 2024 16:57:52 GMT; Max-Age=0; path=/; httponly
+< set-cookie: PHPSESSID=03lv2gv7prb851jf1jr0q0bf1s; path=/; secure; httponly; samesite=lax
+< x-debug-token: 98a293
+< x-debug-token-link: https://127.0.0.1:8000/_profiler/98a293
+< x-powered-by: PHP/8.3.6
+< x-robots-tag: noindex
+< content-length: 358
+< 
+* Ignoring the response-body
+* Connection #0 to host 127.0.0.1 left intact
+* Issue another request to this URL: 'https://127.0.0.1:8000/login'
+* Switch from POST to GET
+* Found bundle for host: 0x2200010e6d0 [can multiplex]
+* Re-using existing connection with host 127.0.0.1
+* [HTTP/2] [3] OPENED stream for https://127.0.0.1:8000/login
+* [HTTP/2] [3] [:method: GET]
+* [HTTP/2] [3] [:scheme: https]
+* [HTTP/2] [3] [:authority: 127.0.0.1:8000]
+* [HTTP/2] [3] [:path: /login]
+* [HTTP/2] [3] [accept: */*]
+> GET /login HTTP/2
+Host: 127.0.0.1:8000
+Accept: */*
+
+* Request completely sent off
+< HTTP/2 200 
+< cache-control: max-age=0, must-revalidate, private
+< content-type: text/html; charset=UTF-8
+< date: Sun, 09 Mar 2025 16:57:53 GMT
+< expires: Sun, 09 Mar 2025 16:57:53 GMT
+< set-cookie: main_deauth_profile_token=b2081b; path=/; httponly; samesite=lax
+< set-cookie: main_auth_profile_token=deleted; expires=Sat, 09 Mar 2024 16:57:52 GMT; Max-Age=0; path=/; httponly
+< x-debug-token: b2081b
+< x-debug-token-link: https://127.0.0.1:8000/_profiler/b2081b
+< x-powered-by: PHP/8.3.6
+< x-robots-tag: noindex
+< 
+* Connection #0 to host 127.0.0.1 left intact
